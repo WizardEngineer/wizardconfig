@@ -65,6 +65,10 @@ r_glint_alwaysdraw 0
 r_glint_procedural 0
 cl_ejectbrass 0
 r_drawflecks 0
+r_bloomtintb 0.11
+r_bloomtintexponent 2
+r_bloomintg 0.59
+r_bloomintr 0.3
 
 r_rootlod 1
 r_flex 0
