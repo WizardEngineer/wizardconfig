@@ -74,7 +74,7 @@ r_rootlod 1
 r_flex 0
 r_rimlight 0
 
-r_lod 1
+r_lod 0
 mp_usehwmmodels 2
 mp_usehwmvcds 2
 
@@ -112,3 +112,7 @@ mat_queue_mode 2
 snd_mix_async 1
 snd_async_fullyasync 1
 r_queued_decals 0
+
+
+alias cl_interp "echo blocking cl_interp"
+alias mat_queue_mode "echo blocking mat_queue_mode"
