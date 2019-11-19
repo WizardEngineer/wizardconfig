@@ -42,6 +42,11 @@ net_splitrate 1
 //net_maxroutable 1200
 //net_maxfragments 1200
 
+// Net graph script for TAB
+alias "+netgraphscores" "net_graph 4; +showscores"
+alias "-netgraphscores" "net_graph 0; -showscores"
+bind "TAB" "+netgraphscores"
+
 
 muzzleflash_light 0
 r_maxnewsamples 128
