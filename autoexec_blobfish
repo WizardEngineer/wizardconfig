@@ -143,3 +143,5 @@ r_queued_decals 0
 
 alias cl_interp "echo blocking cl_interp"
 alias mat_queue_mode "echo blocking mat_queue_mode"
+
+echo Blobfig - Created By Wizard_Engineer
