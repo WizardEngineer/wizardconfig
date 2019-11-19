@@ -1,5 +1,8 @@
 // Launch Options
 // -high -novid -console -sv -r_emulate_gl -nojoy -nosteamcontroller -softparticlesdefaultoff -reuse -nohltv -particles 1 -primarysound -snoforceformat
+// dxlevel 98 //not much different from 95 but should make graphics slightly nicer
+// dxlevel 95 //most stable
+// dxlevel 90 //less stable but better fps
 
 cl_interp .0211515
 cl_interp_ratio 1
@@ -39,8 +42,9 @@ mat_reduceparticles 1
 mat_hdr_level 0
 mat_specular 0
 mat_bumpmap 0
-mat_filterlightmaps 1
-mat_filtertextures 1
+mat_filterlightmaps 1 // Minecraft Lights @ 0
+mat_filtertextures 1 // Minecraft Textures @ 0
+mat_max_worldmesh_vertices 65536
 
 r_waterforceexpensive 0
 r_waterforcereflectentities 0
@@ -48,7 +52,7 @@ r_WaterDrawReflection 0
 r_WaterDrawRefraction 0
 
 r_decals 9
-mp_decals 9
+mp_decals 9 
 cl_new_impact_effects 0
 r_shadowrendertotexture 0
 cl_blobbyshadows 1
@@ -71,6 +75,7 @@ r_bloomintg 0.59
 r_bloomintr 0.3
 
 r_rootlod 1
+lod_TransitionDist -5000
 r_flex 0
 r_rimlight 0
 
