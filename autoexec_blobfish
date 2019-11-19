@@ -105,6 +105,7 @@ fps_max 240
 tf_colorblindassist 1
 tf_sheen_alpha_firstperson 1
 tf_sheen_framerate 25
+tf_use_match_hud 1
 
 cl_ragdoll_physics_enable 1
 cl_ragdoll_forcefade 1
