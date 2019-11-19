@@ -5,12 +5,12 @@
 // dxlevel 90 //less stable but better frames
 
 // Balance Network settings
-cl_interp .0211515
+cl_interp 0 // testing with cmd and update being 100
 cl_interp_ratio 1
-cl_cmdrate 66
-cl_updaterate 66
+cl_cmdrate 100
+cl_updaterate 100
 cl_smooth 1
-cl_smoothtime .0211515
+cl_smoothtime .01
 rate 196608
 
 net_compresspackets 1
@@ -141,8 +141,30 @@ snd_mix_async 1
 snd_async_fullyasync 1
 r_queued_decals 0
 
+////////////////////////
+////////Movement////////
+////////////////////////
 
-alias cl_interp "echo blocking cl_interp"
+bind w +mfwd
+bind s +mback
+bind a +mleft
+bind d +mright
+
+alias +mfwd "-back;+forward;alias checkfwd +forward"
+alias +mback "-forward;+back;alias checkback +back"
+alias +mleft "-moveright;+moveleft;alias checkleft +moveleft"
+alias +mright "-moveleft;+moveright;alias checkright +moveright"
+alias -mfwd "-forward;checkback;alias checkfwd none"
+alias -mback "-back;checkfwd;alias checkback none"
+alias -mleft "-moveleft;checkright;alias checkleft none"
+alias -mright "-moveright;checkleft;alias checkright none"
+alias checkfwd none
+alias checkback none
+alias checkleft none
+alias checkright none
+alias none ""
+
+alias fps_max "echo blocking fps_max"
 alias mat_queue_mode "echo blocking mat_queue_mode"
 
 clear
