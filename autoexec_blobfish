@@ -65,7 +65,7 @@ mat_hdr_level 1
 mat_specular 1
 mat_bumpmap 0
 mat_filterlightmaps 1 // Minecraft Lights @ 0
-mat_filtertextures 1 // Minecraft Textures @ 0
+mat_filtertextures 0 // Minecraft Textures @ 0
 mat_max_worldmesh_vertices 65536
 
 r_waterforceexpensive 0
