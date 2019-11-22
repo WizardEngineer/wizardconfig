@@ -60,6 +60,7 @@ mat_phong 0
 mat_picmip 1
 mat_reducefillrate 1
 mat_reduceparticles 1
+mat_viewportscale 0
 mat_hdr_level 1
 mat_specular 1
 mat_bumpmap 0
@@ -96,7 +97,7 @@ r_bloomtintexponent 2
 r_bloomintg 0.59
 r_bloomintr 0.3
 
-r_rootlod 1
+r_rootlod 0
 lod_TransitionDist -5000
 r_flex 0
 r_rimlight 0
