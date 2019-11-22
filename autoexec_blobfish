@@ -1,5 +1,5 @@
 // Launch Options
-// -high -novid -console -sv -r_emulate_gl -nojoy -nosteamcontroller -softparticlesdefaultoff -reuse -nohltv -particles 1 -primarysound -snoforceformat
+// -novid -console -sv -r_emulate_gl -nojoy -nosteamcontroller -softparticlesdefaultoff -nohltv -particles 1 -primarysound -snoforceformat
 // dxlevel 98 //not much different from 95 but should make graphics slightly nicer
 // dxlevel 95 //most stable
 // dxlevel 90 //less stable but better frames
@@ -59,13 +59,12 @@ mat_parallaxmap 1
 mat_antialias 1
 mat_trilinear 1
 mat_forceaniso 1
-mat_phong 0
 mat_picmip 1
 mat_reducefillrate 1
 mat_reduceparticles 1
 mat_viewportscale 1
-mat_hdr_level 1
-mat_specular 1
+mat_hdr_level 0
+mat_specular 0
 mat_bumpmap 0
 mat_filterlightmaps 1 // Minecraft Lights @ 0
 mat_filtertextures 0 // Minecraft Textures @ 0
@@ -176,7 +175,7 @@ alias none ""
 alias fps_max "echo blocking fps_max"
 alias mat_queue_mode "echo blocking mat_queue_mode"
 
+lighting_very_low
+
 clear
 echo Blobfig - Created By Wizard_Engineer
-
-lighting_very_low
