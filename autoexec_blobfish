@@ -3,6 +3,7 @@
 // dxlevel 98 //not much different from 95 but should make graphics slightly nicer
 // dxlevel 95 //most stable
 // dxlevel 90 //less stable but better frames
+// dxlevel 81 //best for performance with some visual glitches and unable to join Valve Comp
 
 // Balance Network settings
 cl_interp 0 // testing with cmd and update being 100
