@@ -57,11 +57,11 @@ mat_antialias 1
 mat_trilinear 1
 mat_forceaniso 1
 mat_phong 0
-mat_picmip 2
+mat_picmip 1
 mat_reducefillrate 1
 mat_reduceparticles 1
-mat_hdr_level 0
-mat_specular 0
+mat_hdr_level 1
+mat_specular 1
 mat_bumpmap 0
 mat_filterlightmaps 1 // Minecraft Lights @ 0
 mat_filtertextures 1 // Minecraft Textures @ 0
@@ -78,7 +78,7 @@ cl_new_impact_effects 0
 r_shadowrendertotexture 0
 cl_blobbyshadows 1
 cl_burninggibs 0
-r_3dsky 0
+r_3dsky 1
 r_eyemove 0
 tf_clientsideeye_lookats 0
 rope_subdiv 2
@@ -105,7 +105,7 @@ r_lod 0
 mp_usehwmmodels 2
 mp_usehwmvcds 2
 
-fps_max 240
+fps_max 181
 
 tf_colorblindassist 1
 tf_sheen_alpha_firstperson 1
