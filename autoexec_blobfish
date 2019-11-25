@@ -2,14 +2,14 @@
 // -novid -console -sv -r_emulate_gl -nojoy -nosteamcontroller -softparticlesdefaultoff -nohltv -particles 1 -primarysound -snoforceformat
 // dxlevel 98 //not much different from 95 but should make graphics slightly nicer
 // dxlevel 95 //most stable
-// dxlevel 90 //less stable but better frames
-// dxlevel 81 //best for performance with some visual glitches and unable to join Valve Comp
+// dxlevel 90 //less stable but better frames (Alternative for openGL and primarily for it)
+// dxlevel 81 //best for performance with some visual glitches and unable to join Valve Comp (Won't work with MacOS or Linux)
 
 // Balance Network settings
-cl_interp 0 // testing with cmd and update being 100
+cl_interp 0.0179 // testing with cmd and update being 100
 cl_interp_ratio 1
-cl_cmdrate 100
-cl_updaterate 100
+cl_cmdrate 67
+cl_updaterate 67
 cl_smooth 1
 cl_smoothtime .01
 rate 196608
@@ -114,8 +114,6 @@ r_rimlight 0
 r_lod 0
 mp_usehwmmodels 2
 mp_usehwmvcds 2
-
-fps_max 181
 
 tf_colorblindassist 1
 tf_sheen_alpha_firstperson 1
