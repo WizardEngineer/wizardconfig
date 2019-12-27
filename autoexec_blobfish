@@ -8,7 +8,7 @@
 // use +mat_dxlevel <number> for a small performance boost in launch
 
 // Balance Network settings
-cl_interp 0.01 // testing with cmd and update being 100
+cl_interp 0.01
 cl_interp_ratio 1
 cl_cmdrate 66
 cl_updaterate 66
