@@ -6,13 +6,13 @@
 // dxlevel 81 //best for performance with some visual glitches and unable to join Valve Comp (Won't work with MacOS or Linux)
 
 // Balance Network settings
-cl_interp 0.0179 // testing with cmd and update being 100
+cl_interp 0.01 // testing with cmd and update being 100
 cl_interp_ratio 1
-cl_cmdrate 67
-cl_updaterate 67
+cl_cmdrate 66
+cl_updaterate 66
 cl_smooth 1
 cl_smoothtime .01
-rate 196608
+rate 100000
 
 net_compresspackets 1
 net_compresspackets_minsize 180
@@ -48,15 +48,16 @@ alias "+netgraphscores" "net_graph 4; +showscores"
 alias "-netgraphscores" "net_graph 0; -showscores"
 bind "TAB" "+netgraphscores"
 
+fps_max 300 // set to 150 if something feels wrong
 
 muzzleflash_light 0
 r_maxnewsamples 128
 r_minnewsamples 128
 mat_parallaxmap 1
 
-mat_antialias 1
-mat_trilinear 1
-mat_forceaniso 1
+mat_antialias 4
+//mat_trilinear 1
+mat_forceaniso 8
 mat_picmip 1
 mat_reducefillrate 1
 mat_reduceparticles 1
@@ -67,7 +68,7 @@ mat_specular 0
 mat_phong 0
 mat_bumpmap 0
 mat_filterlightmaps 1 // Minecraft Lights @ 0
-mat_filtertextures 0 // Minecraft Textures @ 0
+mat_filtertextures 1 // Minecraft Textures @ 0
 mat_max_worldmesh_vertices 65536
 
 r_waterforceexpensive 0
@@ -82,8 +83,8 @@ r_maxdlights 0
 r_worldlightmin .0038
 r_worldlights 0
 
-r_decals 9
-mp_decals 9
+r_decals 18
+mp_decals 18
 cl_new_impact_effects 0
 r_shadowrendertotexture 0
 cl_blobbyshadows 1
@@ -111,7 +112,7 @@ lod_TransitionDist -5000
 r_flex 0
 r_rimlight 0
 
-r_lod 0
+r_lod -1
 mp_usehwmmodels 2
 mp_usehwmvcds 2
 
@@ -177,7 +178,6 @@ alias checkleft none
 alias checkright none
 alias none ""
 
-alias fps_max "echo blocking fps_max"
 alias mat_queue_mode "echo blocking mat_queue_mode"
 
 clear
