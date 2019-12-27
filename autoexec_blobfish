@@ -1,5 +1,5 @@
 // Launch Options
-// -high -novid -nojoy -nosteamcontroller -softparticlesdefaultoff -nohltv -particles 1 -primarysound -snoforceformat
+// -high +mat_dxlevel 95 -novid -nojoy -nosteamcontroller -softparticlesdefaultoff -nohltv -particles 1 -primarysound -snoforceformat
 // dxlevel 98 //not much different from 95 but should make graphics slightly nicer
 // dxlevel 95 //most stable
 // dxlevel 90 //less stable but better frames (Alternative for openGL and primarily for it)
