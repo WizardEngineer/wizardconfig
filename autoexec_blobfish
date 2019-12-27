@@ -1,9 +1,11 @@
 // Launch Options
-// -novid -console -sv -r_emulate_gl -nojoy -nosteamcontroller -softparticlesdefaultoff -nohltv -particles 1 -primarysound -snoforceformat
+// -high -novid -nojoy -nosteamcontroller -softparticlesdefaultoff -nohltv -particles 1 -primarysound -snoforceformat
 // dxlevel 98 //not much different from 95 but should make graphics slightly nicer
 // dxlevel 95 //most stable
 // dxlevel 90 //less stable but better frames (Alternative for openGL and primarily for it)
 // dxlevel 81 //best for performance with some visual glitches and unable to join Valve Comp (Won't work with MacOS or Linux)
+
+// use +mat_dxlevel <number> for a small performance boost in launch
 
 // Balance Network settings
 cl_interp 0.01 // testing with cmd and update being 100
@@ -30,14 +32,14 @@ net_splitpacket_maxrate 80000
 net_splitrate 1
 
 // Poor connection
-//rate 131072
+//rate 100000
 //net_maxcleartime 0.06
-//cl_interp .0333333
-//cl_interp_ratio 2
+//cl_interp .06
+//cl_interp_ratio 3
 //cl_smooth 1
-//cl_smoothtime .0333333
-//cl_cmdrate 60
-//cl_updaterate 60
+//cl_smoothtime .01
+//cl_cmdrate 66
+//cl_updaterate 66
 //net_compresspackets 1
 //net_compresspackets_minsize 180
 //net_maxroutable 1200
