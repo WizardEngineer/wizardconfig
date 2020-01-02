@@ -16,19 +16,15 @@ cl_smooth 1
 cl_smoothtime .01
 rate 100000
 
-net_compresspackets 1
-net_compresspackets_minsize 180
-net_maxroutable 1200
-net_maxfragments 1200
 net_udp_rcvbuf 131072
 net_queued_packet_thread 1
 net_maxpacketdrop 0
 net_drawslider 1
 net_showsplits 0
 net_showdrop 1
-net_maxcleartime 0.06
+net_maxcleartime 0
 net_maxfilesize 64
-net_splitpacket_maxrate 80000 
+net_splitpacket_maxrate 1048576
 net_splitrate 1
 
 // Poor connection
