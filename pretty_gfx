@@ -11,6 +11,12 @@ mat_reduceparticles 0
 mat_hdr_level 2
 mat_bumpmap 1
 
+/////////
+Joysticks
+/////////
+joystick 0
+joy_advanced 0
+
 ////////
 Ragdolls
 ////////
