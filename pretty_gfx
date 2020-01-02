@@ -130,3 +130,6 @@ filesystem_max_stdio_read 2047
 // Other //
 ///////////
 fps_max 300 // performance studders change to 150
+voice_enable 1
+alias voice_enable "echo Use voice_modenable instead of voice_enable"
+voice_scale 1
