@@ -1,0 +1,132 @@
+// Launch Options
+// -high -novid +mat_dxlevel 95 -sv -nohltv -nosteamcontroller -softparticlesdefaultoff -particles 1 -primarysound -snoforceformat
+
+mat_antialias 8
+mat_forceaniso 16
+mat_phong 1
+mat_specular 1
+mat_picmip 1
+mat_reducefillrate 0
+mat_reduceparticles 0
+mat_hdr_level 2
+mat_bumpmap 1
+
+////////
+Ragdolls
+////////
+cl_ragdoll_physics_enable 1
+cl_ragdoll_forcefade 0
+cl_ragdoll_fade_time 15
+cl_ragdoll_collide 1
+violence_agibs 1
+violence_hgibs 1
+cl_phys_props_enable 1
+cl_phys_props_max 1024
+props_break_max_pieces 100
+props_break_max_pieces_perframe 10
+cl_burninggibs 1
+
+///////////
+// Water //
+///////////
+r_waterforceexpensive 1
+r_waterforcereflectentities 1
+r_WaterDrawReflection 1
+r_WaterDrawRefraction 1
+
+/////////////
+// Effects //
+/////////////
+r_decals 2048
+mp_decals 2048
+cl_new_impact_effects 1
+r_shadowrendertotexture 1
+cl_blobbyshadows 0
+cl_burninggibs 1
+r_eyemove 1
+tf_clientsideeye_lookats 1
+rope_subdiv 8
+rope_wind_dist 2000
+r_drawdetailprops 1
+cl_detaildist 1200
+tf_particles_disable_weather 0
+r_glint_alwaysdraw 1
+r_glint_procedural 1
+cl_ejectbrass 1
+r_drawflecks 1
+
+//////////////
+// Lighting //
+//////////////
+r_radiosity 2
+lightcache_maxmiss 1
+r_lightcachecenter 0
+
+////////////
+// Models //
+////////////
+r_lod 0
+mp_usehwmmodels 1
+mp_usehwmvcds 1
+
+////////////////////
+// DirectX/OpenGL //
+////////////////////
+incrementvar mat_managedtextures 0 0 1					// On modern graphics cards, everything should fit into VRAM
+
+//////////////
+// Textures //
+//////////////
+mat_viewportscale 1
+mat_fullbright 0
+
+///////////
+// Sound //
+///////////
+dsp_slow_cpu 0
+
+///////////////
+// Threading //
+///////////////
+//threadpool_affinity 0 // 0 appears to have a negative performance impact on Ryzen 5 1600x
+r_threaded_client_shadow_manager 1
+cl_threaded_client_leaf_system 1
+mat_queue_mode 2
+snd_mix_async 1
+snd_async_fullyasync 1
+r_queued_decals 0 // 1 is not stable
+
+////////////
+// Models //
+////////////
+r_flex 1
+r_rootlod 0
+
+////////////
+// Memory //
+////////////
+//datacachesize 64
+//mem_min_heapsize 48
+//mem_max_heapsize 512
+
+/////////////
+// Loading //
+/////////////
+sv_forcepreload 0
+mod_forcedata 0
+mod_load_showstall 2
+mod_touchalldata 0
+mod_forcetouchdata 0
+mod_load_anims_async 1
+mod_load_mesh_async 1
+mod_load_vcollide_async 1
+mod_offline_hdr_switch 1
+tf_time_loading_item_panels 0.00001
+filesystem_native 0
+filesystem_unbuffered_io 0
+filesystem_max_stdio_read 2047
+
+///////////
+// Other //
+///////////
+fps_max 300 // performance studders change to 150
