@@ -59,7 +59,7 @@ mat_parallaxmap 1
 mat_antialias 4
 //mat_trilinear 1
 mat_forceaniso 8
-mat_picmip 1
+mat_picmip 0
 mat_reducefillrate 1
 mat_reduceparticles 1
 mat_viewportscale 1
@@ -67,7 +67,7 @@ mat_disable_lightwarp 1
 mat_hdr_level 0
 mat_specular 0
 mat_phong 0
-mat_bumpmap 0
+mat_bumpmap 1
 mat_filterlightmaps 1 // Minecraft Lights @ 0
 mat_filtertextures 1 // Minecraft Textures @ 0
 mat_max_worldmesh_vertices 65536
@@ -182,4 +182,5 @@ alias none ""
 alias mat_queue_mode "echo blocking mat_queue_mode"
 
 clear
-echo Blobfig - Created By Wizard_Engineer
+echo Blobfig
+echo created by wizard
