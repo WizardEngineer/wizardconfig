@@ -8,7 +8,7 @@
 // use +mat_dxlevel <number> for a small performance boost in launch
 
 // Balance Network settings
-cl_interp 0.01
+cl_interp 0.03
 cl_interp_ratio 1
 cl_cmdrate 66
 cl_updaterate 66
@@ -31,7 +31,7 @@ net_splitrate 1
 //rate 100000
 //net_maxcleartime 0.06
 //cl_interp .06
-//cl_interp_ratio 3
+//cl_interp_ratio 2
 //cl_smooth 1
 //cl_smoothtime .01
 //cl_cmdrate 66
