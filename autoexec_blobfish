@@ -114,8 +114,8 @@ r_flex 0
 r_rimlight 0
 
 r_lod -1
-mp_usehwmmodels 2
-mp_usehwmvcds 2
+mp_usehwmmodels 1
+mp_usehwmvcds 1
 
 tf_colorblindassist 1
 tf_sheen_alpha_firstperson 1
