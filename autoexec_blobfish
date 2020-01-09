@@ -182,5 +182,5 @@ alias none ""
 alias mat_queue_mode "echo blocking mat_queue_mode"
 
 clear
-echo Blobfig
+echo Blobfish performance config
 echo created by wizard
