@@ -56,9 +56,8 @@ r_maxnewsamples 128
 r_minnewsamples 128
 mat_parallaxmap 1
 
-mat_antialias 4
-//mat_trilinear 1
-mat_forceaniso 8
+mat_antialias 2
+mat_forceaniso 4
 mat_picmip 0
 mat_reducefillrate 1
 mat_reduceparticles 1
