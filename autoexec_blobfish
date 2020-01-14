@@ -5,7 +5,7 @@
 // dxlevel 90 //less stable but better frames (Alternative for openGL and primarily for it)
 // dxlevel 81 //best for performance with some visual glitches and unable to join Valve Comp (Won't work with MacOS or Linux)
 
-// use +mat_dxlevel <number> for a small performance boost in launch
+// use +mat_dxlevel <number> so it doesn't crash game when kept in
 
 // Balance Network settings
 cl_interp 0.03
