@@ -1,6 +1,18 @@
 // Launch Options
 // -high -novid +mat_dxlevel 95 -sv -nohltv -nosteamcontroller -softparticlesdefaultoff -particles 1 -primarysound -snoforceformat
 
+///////
+Network
+///////
+
+cl_interp 0.01
+cl_interp_ratio 1
+cl_cmdrate 66
+cl_updaterate 66
+rate 100000
+cl_smooth 1
+cl_smoothtime 0.1
+
 mat_antialias 8
 mat_forceaniso 16
 mat_phong 1
@@ -135,7 +147,7 @@ filesystem_max_stdio_read 2047
 ///////////
 // Other //
 ///////////
-fps_max 300 // performance studders change to 150
+fps_max 300 // performance studders divide by 2 or 3
 voice_enable 1
 alias voice_enable "echo Use voice_modenable instead of voice_enable"
 voice_scale 1
