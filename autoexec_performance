@@ -46,7 +46,7 @@ alias "+netgraphscores" "net_graph 4; +showscores"
 alias "-netgraphscores" "net_graph 0; -showscores"
 bind "TAB" "+netgraphscores"
 
-fps_max 300 // set to 150 if something feels wrong
+fps_max 300 // divide by 2 or 3 if something feels off
 
 joystick 0
 joy_advanced 0
