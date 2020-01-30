@@ -10,8 +10,8 @@
 // Balance Network settings
 cl_interp 0.03
 cl_interp_ratio 2
-cl_cmdrate 66.6666666
-cl_updaterate 66.6666666
+cl_cmdrate 66.66666
+cl_updaterate 66.66666
 cl_smooth 1
 cl_smoothtime .01
 rate 100000
@@ -28,7 +28,7 @@ net_splitpacket_maxrate 1048576
 net_splitrate 1
 
 // Poor connection
-//rate 100000
+//rate 90000
 //net_maxcleartime 0.06
 //cl_interp .06
 //cl_interp_ratio 2
@@ -42,11 +42,11 @@ net_splitrate 1
 //net_maxfragments 1200
 
 // Net graph script for TAB
-alias "+netgraphscores" "net_graph 4; +showscores"
+alias "+netgraphscores" "net_graph 4; +showscores" // can change to 1 for fps improvement
 alias "-netgraphscores" "net_graph 0; -showscores"
 bind "TAB" "+netgraphscores"
 
-fps_max 300 // divide by 2 or 3 if something feels off
+fps_max 300 // can't tell difference between this and 0
 
 joystick 0
 joy_advanced 0
@@ -179,6 +179,8 @@ alias checkright none
 alias none ""
 
 alias mat_queue_mode "echo blocking mat_queue_mode"
+alias voice_enable "echo use voice_modenable instead"
+alias cl_interp "echo Blocking cl_interp for testing"
 
 clear
 echo performance config
