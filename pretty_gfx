@@ -13,6 +13,8 @@ rate 100000
 cl_smooth 1
 cl_smoothtime 0.1
 
+///////////////////
+
 mat_antialias 8
 mat_forceaniso 16
 mat_phong 1
@@ -151,3 +153,4 @@ fps_max 300 // performance studders divide by 2 or 3
 voice_enable 1
 alias voice_enable "echo Use voice_modenable instead of voice_enable"
 voice_scale 1
+alias cl_interp "echo Blocking cl_interp for testing"
