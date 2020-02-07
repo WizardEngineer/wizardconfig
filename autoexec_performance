@@ -41,12 +41,7 @@ net_splitrate 1
 //net_maxroutable 1200
 //net_maxfragments 1200
 
-// Net graph script for TAB
-alias "+netgraphscores" "net_graph 4; +showscores" // can change to 1 for fps improvement
-alias "-netgraphscores" "net_graph 0; -showscores"
-bind "TAB" "+netgraphscores"
-
-fps_max 300 // can't tell difference between this and 0
+fps_max 300
 
 joystick 0
 joy_advanced 0
@@ -154,29 +149,6 @@ mat_queue_mode 2
 snd_mix_async 1
 snd_async_fullyasync 1
 r_queued_decals 0
-
-////////////////////////
-////////Movement////////
-////////////////////////
-
-bind w +mfwd
-bind s +mback
-bind a +mleft
-bind d +mright
-
-alias +mfwd "-back;+forward;alias checkfwd +forward"
-alias +mback "-forward;+back;alias checkback +back"
-alias +mleft "-moveright;+moveleft;alias checkleft +moveleft"
-alias +mright "-moveleft;+moveright;alias checkright +moveright"
-alias -mfwd "-forward;checkback;alias checkfwd none"
-alias -mback "-back;checkfwd;alias checkback none"
-alias -mleft "-moveleft;checkright;alias checkleft none"
-alias -mright "-moveright;checkleft;alias checkright none"
-alias checkfwd none
-alias checkback none
-alias checkleft none
-alias checkright none
-alias none ""
 
 alias mat_queue_mode "echo blocking mat_queue_mode"
 alias voice_enable "echo use voice_modenable instead"
