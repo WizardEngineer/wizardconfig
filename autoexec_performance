@@ -8,13 +8,13 @@
 // use +mat_dxlevel <number> so it doesn't crash game when kept in
 
 // Balance Network settings
-cl_interp 0.03
-cl_interp_ratio 2
-cl_cmdrate 66.66666
-cl_updaterate 66.66666
+cl_interp 0.0161527
+cl_interp_ratio 1
+cl_cmdrate 66
+cl_updaterate 66
 cl_smooth 1
 cl_smoothtime .01
-rate 100000
+rate 262144
 
 net_udp_rcvbuf 131072
 net_queued_packet_thread 1
@@ -28,7 +28,7 @@ net_splitpacket_maxrate 1048576
 net_splitrate 1
 
 // Poor connection
-//rate 90000
+//rate 131072
 //net_maxcleartime 0.06
 //cl_interp .06
 //cl_interp_ratio 2
