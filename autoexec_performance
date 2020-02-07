@@ -51,9 +51,9 @@ r_maxnewsamples 128
 r_minnewsamples 128
 mat_parallaxmap 1
 
-mat_antialias 2
-mat_forceaniso 4
-mat_picmip 0
+mat_antialias 1
+mat_forceaniso 1
+mat_picmip 2
 mat_reducefillrate 1
 mat_reduceparticles 1
 mat_viewportscale 1
@@ -62,8 +62,6 @@ mat_hdr_level 0
 mat_specular 0
 mat_phong 0
 mat_bumpmap 1
-mat_filterlightmaps 1 // Minecraft Lights @ 0
-mat_filtertextures 1 // Minecraft Textures @ 0
 mat_max_worldmesh_vertices 65536
 
 r_waterforceexpensive 0
