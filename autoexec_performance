@@ -8,12 +8,12 @@
 // use +mat_dxlevel <number> so it doesn't crash game when kept in
 
 // Balance Network settings
-cl_interp 0.0161527
+cl_interp 0.0182182182
 cl_interp_ratio 1
-cl_cmdrate 66
-cl_updaterate 66
+cl_cmdrate 67
+cl_updaterate 67
 cl_smooth 1
-cl_smoothtime .01
+cl_smoothtime .01515151
 rate 262144
 
 net_udp_rcvbuf 131072
@@ -41,7 +41,7 @@ net_splitrate 1
 //net_maxroutable 1200
 //net_maxfragments 1200
 
-fps_max 300
+fps_max 400
 
 joystick 0
 joy_advanced 0
@@ -150,7 +150,6 @@ r_queued_decals 0
 
 alias mat_queue_mode "echo blocking mat_queue_mode"
 alias voice_enable "echo use voice_modenable instead"
-alias cl_interp "echo Blocking cl_interp for testing"
 
 clear
 echo performance config
