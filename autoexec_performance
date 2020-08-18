@@ -1,20 +1,20 @@
 // Launch Options
 // -high +mat_dxlevel 95 -novid -nosteamcontroller -softparticlesdefaultoff -nohltv -particles 1 -primarysound -snoforceformat
-// dxlevel 98 //not much different from 95 but should make graphics slightly nicer
+// dxlevel 98 //not much different from 95 but has a slight difference in quality
 // dxlevel 95 //most stable
 // dxlevel 90 //less stable but better frames (Alternative for openGL and primarily for it)
-// dxlevel 81 //best for performance with some visual glitches and unable to join Valve Comp (Won't work with MacOS or Linux)
+// dxlevel 81 //best for performance with some visual glitches and unable to join Valve Competitive (Won't work with MacOS or Linux)
 
 // use +mat_dxlevel <number> so it doesn't crash game when kept in
 
 // Balance Network settings
-cl_interp 0.0182182182
+cl_interp 0.01
 cl_interp_ratio 1
-cl_cmdrate 67
-cl_updaterate 67
+cl_cmdrate 66
+cl_updaterate 66
 cl_smooth 1
-cl_smoothtime .01515151
-rate 262144
+cl_smoothtime 0.0152
+rate 100000
 
 net_udp_rcvbuf 131072
 net_queued_packet_thread 1
@@ -27,21 +27,7 @@ net_maxfilesize 64
 net_splitpacket_maxrate 1048576
 net_splitrate 1
 
-// Poor connection
-//rate 131072
-//net_maxcleartime 0.06
-//cl_interp .06
-//cl_interp_ratio 2
-//cl_smooth 1
-//cl_smoothtime .01
-//cl_cmdrate 66
-//cl_updaterate 66
-//net_compresspackets 1
-//net_compresspackets_minsize 180
-//net_maxroutable 1200
-//net_maxfragments 1200
-
-fps_max 400
+fps_max 300
 
 joystick 0
 joy_advanced 0
@@ -61,8 +47,10 @@ mat_disable_lightwarp 1
 mat_hdr_level 0
 mat_specular 0
 mat_phong 0
-mat_bumpmap 1
+mat_bumpmap 0
 mat_max_worldmesh_vertices 65536
+mat_filterlightmaps 1 // Minecraft Lights @ 0
+mat_filtertextures 1 // Minecraft Textures @ 0
 
 r_waterforceexpensive 0
 r_waterforcereflectentities 0
@@ -76,8 +64,8 @@ r_maxdlights 0
 r_worldlightmin .0038
 r_worldlights 0
 
-r_decals 18
-mp_decals 18
+r_decals 9
+mp_decals 9
 cl_new_impact_effects 0
 r_shadowrendertotexture 0
 cl_blobbyshadows 1
@@ -147,6 +135,8 @@ mat_queue_mode 2
 snd_mix_async 1
 snd_async_fullyasync 1
 r_queued_decals 0
+
+voice_enable 1
 
 alias mat_queue_mode "echo blocking mat_queue_mode"
 alias voice_enable "echo use voice_modenable instead"
