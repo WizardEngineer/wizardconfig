@@ -10,11 +10,11 @@
 // Balance Network settings
 cl_interp 0.01
 cl_interp_ratio 1
-cl_cmdrate 66
-cl_updaterate 66
+cl_cmdrate 66       // In most Valve servers and RGL/UGC servers
+cl_updaterate 66    // you can't go above 66 due to server restrictions
 cl_smooth 1
-cl_smoothtime 0.0152
-rate 100000
+cl_smoothtime 0.1
+rate 197000
 
 net_udp_rcvbuf 131072
 net_queued_packet_thread 1
@@ -27,7 +27,7 @@ net_maxfilesize 64
 net_splitpacket_maxrate 1048576
 net_splitrate 1
 
-fps_max 300
+fps_max 170
 
 joystick 0
 joy_advanced 0
@@ -49,8 +49,8 @@ mat_specular 0
 mat_phong 0
 mat_bumpmap 0
 mat_max_worldmesh_vertices 65536
-mat_filterlightmaps 1 // Minecraft Lights @ 0
-mat_filtertextures 1 // Minecraft Textures @ 0
+mat_filterlightmaps 1               // Minecraft Lights at 0
+mat_filtertextures 1                // Minecraft Textures at 0
 
 r_waterforceexpensive 0
 r_waterforcereflectentities 0
@@ -64,8 +64,8 @@ r_maxdlights 0
 r_worldlightmin .0038
 r_worldlights 0
 
-r_decals 9
-mp_decals 9
+r_decals 36
+mp_decals 36
 cl_new_impact_effects 0
 r_shadowrendertotexture 0
 cl_blobbyshadows 1
